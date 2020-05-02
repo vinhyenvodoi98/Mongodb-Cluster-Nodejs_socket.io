@@ -2,10 +2,14 @@ version: '3'
 
 services:
   node_server:
-    build: ./
+    hostname: node_server
+    container_name: node_server
+    build: ./Node_server
     working_dir: /usr/src/app
     volumes:
-      - ./:/usr/src/app
+      - ./Node_server:/usr/src/app
+    expose:
+      - 3000
     ports:
       - '3000:3000'
     depends_on:
@@ -15,6 +19,24 @@ services:
     networks:
       - app-network
     command: 'yarn start'
+
+  vue_frontend:
+    hostname: vue_frontend
+    image: 'node:10-alpine'
+    container_name: vue-frontend
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - node_server
+    # expose:
+    #   - 8080
+    ports:
+      - '8080:8080'
+    networks:
+      - app-network
+    command: 'yarn serve'
 
   mongo1:
     hostname: mongo1
