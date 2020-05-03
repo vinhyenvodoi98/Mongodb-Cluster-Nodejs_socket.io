@@ -18,20 +18,19 @@ services:
       - mongo3
     networks:
       - app-network
+    restart: always
     command: 'yarn start'
 
   vue_frontend:
     hostname: vue_frontend
     image: 'node:10-alpine'
     container_name: vue-frontend
-    restart: unless-stopped
+    restart: always
     working_dir: /app
     volumes:
       - ./frontend:/app
     depends_on:
       - node_server
-    # expose:
-    #   - 8080
     ports:
       - '8080:8080'
     networks:
