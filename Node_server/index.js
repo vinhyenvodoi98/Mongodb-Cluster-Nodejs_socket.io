@@ -13,6 +13,7 @@ const configDB = require('./config/database.js');
 var server = app.listen(3000);
 app.io = require('socket.io')(server);
 var routes = require('./routes/events')(app.io);
+var user = require('./routes/user');
 
 // configuration ===============================================================
 
@@ -62,7 +63,7 @@ app.use(
 
 // routes ======================================================================
 
-app.use('/events', routes);
+app.use('/', user);
 
 // launch ======================================================================
 
