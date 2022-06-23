@@ -7097,9 +7097,9 @@ shebang-regex@^3.0.0:
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
 
 shell-quote@^1.6.1:
-  version "1.7.2"
-  resolved "https://registry.npm.taobao.org/shell-quote/download/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
-  integrity sha1-Z6fQLHbJ2iT5nSCAj8re0ODgS+I=
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.3.tgz#aa40edac170445b9a431e17bb62c0b881b9c4123"
+  integrity sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.3"
@@ -7162,7 +7162,7 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-socket.io-client@^2.1.1, socket.io-client@^2.3.0:
+socket.io-client@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-2.3.0.tgz#14d5ba2e00b9bcd145ae443ab96b3f86cbcc1bb4"
   integrity sha512-cEQQf24gET3rfhxZ2jJ5xzAOo/xhZwK+mOqtGRg5IowZsMgwvHwnf/mCRapAAkadhM26y+iydgwsXGObBB5ZdA==
@@ -8103,13 +8103,6 @@ vue-loader@^15.9.1:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
-
-vue-socket.io@^3.0.8:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/vue-socket.io/-/vue-socket.io-3.0.8.tgz#8eac2063067f089d6ba8eca54a3662b6d1ada231"
-  integrity sha512-rXOBgjvmfcL693PRuyAm8RFCyO5OnqNtaNKnt5OJnsVo62vUO/c4pJwdC8bwoErqDOWc+Xa5gpNmgc1YYSu9vg==
-  dependencies:
-    socket.io-client "^2.1.1"
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"
